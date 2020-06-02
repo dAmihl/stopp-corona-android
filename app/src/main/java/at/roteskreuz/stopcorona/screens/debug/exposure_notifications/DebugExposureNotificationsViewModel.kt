@@ -136,4 +136,8 @@ class DebugExposureNotificationsViewModel(
     fun resolutionSucceeded(activity: Activity) {
         startExposureNotifications(activity)
     }
+
+    fun getTemporaryExposureKeyHistory() {
+        exposureNotificationClient.temporaryExposureKeyHistory
+    }
 }
